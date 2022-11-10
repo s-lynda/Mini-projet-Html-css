@@ -1,0 +1,179 @@
+/* On a utilisé @import pour importer Montserrat font qu'on a choisi  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:ital,wght@0,100;0,800;0,900;1,100;1,200;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* styler La barre de navigation  */
+.main-nav {
+    height: 15px;
+    display: flex;
+    width:100%;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;  
+}
+.logo{
+    height: 4em;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px; 
+    color:black;
+}
+.nav-items{
+    flex:1;
+    text-align: right;
+    padding-right:12px;
+}
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:black;
+}
+.nav-items ul li::after{
+    content: '';
+    /*j'ai mis le width à 0 pourqu'elle soit invisible au debut */
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: rgb(25, 125, 231);
+    /* régler le temps de la transition */
+    transition:0.5s;
+}
+.nav-items ul li:hover::after{
+    width:100%;
+}
+.main-nav i{
+    display: none;
+   
+   }
+/*---La Section principal de ''What's The metaverse '' ---*/
+.main-sec img{
+    display: block;
+    margin:50px auto 20px;
+    border-radius: 5px;
+    width: 60%;
+}
+.main-sec img:hover,.main-sec1 img:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+}
+h3{
+    font-size: 50px;
+   padding: 60px 0;
+   text-align: center;
+}
+.intro h1{
+    text-align:center;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.intro h1::first-letter{   
+    font-size: 2em;
+}
+.parag , .parag1,.parag3{
+    margin: 2px 13% 5px;
+    font-size: 20px;
+}
+.intro h4{
+  font-size: 30px;
+  text-align: center;
+}
+.A
+{
+margin-top: 5px;
+display: flex;
+justify-content: space-between;
+}
+.parag2 {
+    padding: 2px 13% 5px;
+    font-size: 20px;
+    padding-right:0;
+}
+.A .pic1{
+    height: 35em;
+    width:20em;
+   margin-right:17%;
+}
+/*--- CSS de la page ImpacT------*/
+/*-----------------*/
+.ital{
+    margin-left:25%;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.paragraphs ,.conclusion p,.conclusion h4{
+ margin: 10px 20% 0;
+ font-size: 20px;
+}
+.paragraphs p,.conclusion p{
+ margin-bottom: 10px;
+}
+
+.main-sec1 .pic{
+    display: block;
+    margin:50px auto 20px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.main-sec1 .second{
+    display: block;
+    margin:20px 5px 20px;
+    border-radius: 10px;
+    width: 50%;
+    float:right;
+}
+.first,.third{
+    display: block;
+    margin:5px 10px 5px;
+    border-radius: 5px;
+    width: 60%;
+    float:left;
+}
+
+/*-------------------Footer---------------*/
+/*-------------------Footer---------------*/
+
+footer p{
+    padding: 100px 30% 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media(max-width: 700px){
+    .nav-items ul li{
+        display: block;
+    }
+    .nav-items {
+       position:absolute;
+        background:white;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+    }
+    .main-nav i{
+        display:block;
+        color:rgb(3, 3, 32);
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+    .nav-items  ul{
+        padding: 40px;
+    }
+}
